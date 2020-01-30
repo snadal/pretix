@@ -14,7 +14,7 @@ from django.db.models.functions import Coalesce, Greatest
 from django.dispatch import receiver
 from django.utils.functional import cached_property
 from django.utils.timezone import make_aware, now
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 from django_scopes import scopes_disabled
 
 from pretix.api.models import OAuthApplication

@@ -11,7 +11,7 @@ from django.core.files.base import ContentFile
 from django.core.files.storage import default_storage
 from django.db.models import Exists, OuterRef
 from django.db.models.functions import Coalesce
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 from jsonfallback.functions import JSONExtract
 from PyPDF2 import PdfFileMerger
 from reportlab.lib import pagesizes

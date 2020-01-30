@@ -1,5 +1,5 @@
 from django.apps import AppConfig
-from django.utils.translation import ugettext, ugettext_lazy as _
+from django.utils.translation import gettext, gettext_lazy as _
 
 from pretix import __version__ as version
 
@@ -20,7 +20,7 @@ class BadgesApp(AppConfig):
     def installed(self, event):
         if not event.badge_layouts.exists():
             event.badge_layouts.create(
-                name=ugettext('Default'),
+                name=gettext('Default'),
                 default=True,
             )
 
