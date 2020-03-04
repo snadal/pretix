@@ -67,6 +67,8 @@ RUN chmod +x /usr/local/bin/pretix && \
     chown -R pretixuser:pretixuser /pretix /data data && \
 	sudo -u pretixuser make production
 
+COPY pretix.cfg /etc/pretix
+
 USER pretixuser
 VOLUME ["/etc/pretix", "/data"]
 EXPOSE 80
